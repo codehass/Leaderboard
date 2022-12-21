@@ -1,13 +1,14 @@
-import _ from 'lodash';
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+const element = document.querySelector('.infos');
+element.innerHTML = `
+  <div class="score">
+    <p>Name : 100</p>
+    </div>
+    <div class="score">
+    <p>Name : 80</p>
+    </div>
+    <div class="score">
+    <p>Name : 90</p>
+  </div>
+`;
