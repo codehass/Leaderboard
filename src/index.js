@@ -3,7 +3,7 @@ import {
   form,
   infos,
   refresh,
-  url
+  url,
 } from './Modules/variables.js';
 
 form.addEventListener('submit', async (e) => {
