@@ -1,7 +1,8 @@
 import './style.css';
-import {
-  form, infos, refresh, url 
-  } from './Modules/variables';
+import form from './Modules/variables';
+import infos from './Modules/variables';
+import refresh from './Modules/variables';  
+import url from './Modules/variables';
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
