@@ -1,8 +1,10 @@
 import './style.css';
-import form from './Modules/variables.js';
-import infos from './Modules/variables.js';
-import refresh from './Modules/variables.js';  
-import url from './Modules/variables.js';
+import {
+  form,
+  infos,
+  refresh,
+  url
+} from './Modules/variables.js';
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
