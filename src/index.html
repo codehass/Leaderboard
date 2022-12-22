@@ -13,17 +13,17 @@
   <div class="board">
     <div class="borad-header">
       <h2>Recent score</h2>
-      <button>Refresh</button>
+      <button class="refresh">Refresh</button>
     </div>
     <div class="infos">
     </div>
   </div>
-  <div class="input">
+  <form action="" class="input form">
     <h2>Add your score</h2>
-    <input type="text" placeholder="Your name" required>
-    <input type="text" placeholder="Your score" required>
-    <button class="submit">Submit</button>
-  </div>
+      <input type="text" name="user" placeholder="Your name" id="name" required>
+      <input type="text" name="score" placeholder="Tour score" id="score" required>
+      <button type="submit" class="submit">Submit</button>
+  </form>
 </section>
 
 <script src="index.js"></script>
