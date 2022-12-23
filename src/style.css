@@ -31,7 +31,7 @@ header nav {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 60%;
+  width: 100%;
 }
 
 .borad-header {
@@ -44,6 +44,19 @@ header nav {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+  border: 1px solid #696565;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.info {
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.info:nth-child(odd) {
+  background: #fff;
 }
 
 .score {
@@ -56,6 +69,10 @@ header nav {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.input h2 {
+  margin-bottom: 23px;
 }
 
 .input input {
