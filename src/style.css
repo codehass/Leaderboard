@@ -1,35 +1,51 @@
+/* stylelint-disable no-eol-whitespace */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Lato:wght@100;300;400;700;900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --textColor1: #008cff;
+  --textColor2: #fff;
+  --textColor3: #737594;
+}
+
 body {
-  background-color: rgba(197, 197, 197, 0.639);
+  font-family: "Rubik Vinyl", serif;
+  background: #def5f8;
 }
 
 header {
-  width: 80%;
+  width: 100%;
   padding: 40px;
   margin: auto;
+  background-image: linear-gradient(40deg, rgb(255 0 0) 60%, orange);
 }
 
 header nav {
-  font-size: 28px;
+  font-size: 64px;
   font-weight: 600;
+  text-align: center;
+  background-image: linear-gradient(40deg, rgb(255 0 0) 60%, orange);
+  color: #fff;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
 
 .board {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   justify-content: start;
   width: 100%;
 }
@@ -37,26 +53,35 @@ header nav {
 .borad-header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   gap: 20px;
+  padding: 20px;
+}
+
+.gradient-text {
+  background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 36px;
 }
 
 .infos {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
   border: 1px solid #696565;
-  border-radius: 5px;
-  padding: 12px;
 }
 
 .info {
-  font-size: 14px;
-  padding: 8px;
-  border-radius: 5px;
+  font-size: 22px;
+  font-family: 'Lacquer', serif;
+  padding: 8px 15px 8px 20px;
+  border-radius: 25px;
 }
 
 .info:nth-child(odd) {
-  background: #fff;
+  background: orange;
+  color: #fff;
 }
 
 .score {
@@ -71,15 +96,31 @@ header nav {
   gap: 30px;
 }
 
+.form {
+  background: -webkit-linear-gradient(bottom, #2dbd6e, #a6f77b);
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 25px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
 .input h2 {
-  margin-bottom: 23px;
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .input input {
   height: 40px;
   width: 300px;
   padding-left: 20px;
-  border-radius: 5px;
+  border-radius: 25px;
+  border: 1px solid #6942ef;
 }
 
 .submit {
@@ -92,4 +133,24 @@ button {
   font-size: 16px;
   padding: 10px;
   border-radius: 5px;
+}
+
+.button {
+  color: var(--textColor2);
+  border-radius: 26px;
+  background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+  background-size: 400%;
+  background-position: 0% 0%;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+.my_scroll_div {
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 40px;
+  border-radius: 25px;
+  border: none;
+  background-image: linear-gradient(40deg, rgb(255 0 0) 60%, orange);
 }
