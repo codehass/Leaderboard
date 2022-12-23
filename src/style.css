@@ -40,6 +40,7 @@ header nav {
   gap: 50px;
   width: 60%;
   margin: auto;
+  height: 90vh;
 }
 
 .board {
@@ -59,11 +60,10 @@ header nav {
 }
 
 .gradient-text {
-  background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+  background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .infos {
@@ -110,7 +110,7 @@ header nav {
   padding: 20px;
   text-align: center;
   font-size: 36px;
-  background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+  background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -148,7 +148,7 @@ button {
 
 .my_scroll_div {
   overflow-y: auto;
-  max-height: 400px;
+  height: 400px;
   padding: 40px;
   border-radius: 25px;
   border: none;
